@@ -6,7 +6,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class UserSessionManager {
 
-    private static final UserSessionManager instance = new UserSessionManager();
     private final Map<String, UserSession> sessionsByUserId = new ConcurrentHashMap<>();
     private final Map<Channel, String> userIdsByChannel = new ConcurrentHashMap<>();
 
